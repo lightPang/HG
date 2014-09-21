@@ -1,0 +1,454 @@
+@media screen and (min-width:1200px)
+ {
+ html{
+ font-size:20px!important;
+ }
+ }
+ @media screen  and (min-width: 380px) and (max-width: 1200px)
+ {
+  html{
+  font-size:16px!important;
+  }
+ }
+@media screen and (max-width:380px)
+ {
+ html{
+ font-size:12px!important;
+ }
+ }
+
+@font-face{ 
+  font-family:'head-font'; 
+  src: url('../fonts/fzlth.TTF') format('truetype');
+ }
+ 
+@font-face{ 
+  font-family:'content-font'; 
+  src: url('../fonts/fzxdxjt.ttf') format('truetype');
+ }
+ 
+ @font-face{ 
+  font-family:'mid-font'; 
+  src: url('../fonts/fzzdxjt.ttf') format('truetype');
+ }
+ 
+  @font-face{ 
+  font-family:'logo-font'; 
+  src: url('../fonts/yy.TTF') format('truetype');
+ }
+
+ #menu_bar{
+  margin-top:0.5rem;
+  padding-right:9.5%;
+ }
+ 
+ .my-nav-head{
+  padding-left:9.5%;
+}
+ 
+.on_active a{
+  border-bottom: 5px solid #ff5d25;
+
+}
+
+.navbar-right a:hover{
+  border-bottom: 5px solid #ff5d25;
+}
+.navbar-right li:{
+  padding:0.5rem;
+    
+}
+.my_nav li{
+  padding-left:0.5rem;
+  padding-right:0.5rem;
+}
+
+.top-container{
+  margin-top:65px;
+}
+.my_nav{
+  background-color: #ffffff;
+  vertical-align: baseline;
+  position: fixed;
+  top: 0;
+  left:0;
+  height:65px;
+  overflow: hidden;
+  width: 100%;
+  font-size:16px;
+  font-family:'Microsoft Yahei', Helvetica, Arial !important;
+  border-bottom-color:#858585!important;
+}
+
+.bg-img{
+  width:70%;
+  text-align:center;
+  z-index:1;
+  position:relative;
+  left:15%;
+ }
+ 
+.pic-container{
+  width:100%;
+  margin-left:0px;
+  margin-right:0px ;
+  padding-right:0px;
+}
+
+.icon{
+  margin-top:20px;
+  margin-bottom:3px;
+  height:30px;
+  background-image:url("../JPG/icon.png");
+}
+
+.head-icon{
+  float:left; 
+  margin-right:6px;
+  margin-bottom:10px;
+}
+
+.head-title{
+  font-family:'logo-font','Microsoft Yahei';
+  margin-top:14px;
+  float:left; 
+  height:50px;
+  width:160px;
+}
+
+.head-content{
+  font-family:'logo-font','Microsoft Yahei';
+  font-size:9px !important;
+}
+
+.head-title p{
+  font-size:20px;
+  margin-bottom:1px;
+}
+
+
+
+.text-container{
+  padding-top:8%;
+  margin-left:8%;
+  margin-right:8%;
+  padding-bottom:20%;
+  padding-left:5%;
+  background-size:100% 100%;
+}
+
+.text-container-1{
+  padding-bottom:3%;
+}
+
+.head-text{
+  font-size:2rem;
+  font-family:"head-font",'Microsoft Yahei';
+}
+
+.mid-text{
+  font-size:2rem;
+  font-family:"head-font",'Microsoft Yahei';
+  color:#FF0000;
+}
+
+.bottom-head-text{
+  margin-top:3%;
+  font-size:1rem;
+  font-weight:800;
+  font-family:"mid-font",'Microsoft Yahei';
+}
+
+.bottom-text{
+  font-family:"content-font",'Microsoft Yahei';
+  color:#8B8378;
+  font-size:0.75rem;
+}
+
+.img-container{
+  padding-top:8%;
+  margin-left:8%;
+  margin-right:8%;
+  padding-bottom:8%;
+  z-index:2;
+  background-size:100% 100%;
+}
+
+
+
+
+.img-container-1{
+  padding-top:10%;
+  margin-left:8%;
+  margin-right:8%;
+  padding-bottom:5%;
+  z-index:2;
+  background-size:100% 100%;
+}
+
+#container1{
+  background-image:url("../JPG/index00.jpg");
+  height:700px;
+}
+
+#container2{
+  background-image:url("../JPG/index01_copy.jpg");
+ 
+}
+#container3{
+  background-image:url("../JPG/index02.jpg"); 
+}
+#container4{
+  background-image:url("../JPG/index03_copy.jpg");
+}
+#container5{
+  background-image:url("../JPG/index04.jpg");
+}
+#container6{
+  background-image:url("../JPG/index05_copy.jpg");
+}
+#container7{
+  background-image:url("../JPG/index06.jpg");
+}
+#container8{
+  background-image:url("../JPG/index07_copy.jpg");
+}
+#container9{
+  background-image:url("../JPG/index08.jpg");
+}
+
+#container10{
+  background-image:url("../JPG/index09.jpg");
+}
+
+
+
+.wrap-text{
+  background-color:#FFFFFF;
+  margin-top:15%;
+  padding-left:18%;
+  padding-top:3%;
+  padding-bottom:2%;
+  opacity: 0.87;
+}
+
+.wrap-text-2{
+  padding-top:3%;
+  padding-left:14rem;
+  padding-bottom:27%;
+}
+
+.wrap-text-3{
+  padding-left:20%;
+  margin-top:33%;
+  padding-bottom:1%;
+  background-color:#FFFFFF;
+  opacity: 0.8;
+}
+
+.img-head-text{
+  font-family:"head-font",'Microsoft Yahei';
+  font-size:2rem;
+  margin-bottom:0px;
+}
+
+.img-head-text-1{
+  font-size:2rem;
+  font-family:"head-font",'Microsoft Yahei';
+  padding-top:2%;
+  margin-bottom:0px;
+}
+
+.img-mid-text{
+  font-family:"head-font",'Microsoft Yahei';
+  font-size:2rem;
+  color:#FF0000;
+}
+.img-content-title-text{
+  font-weight:700;
+  font-family:"content-font",'Microsoft Yahei';
+}
+
+.img-content-text{
+  font-size:0.75rem;
+  font-family:"content-font",'Microsoft Yahei';
+  color:#5C5C5C;
+}
+
+.title-text{
+  float:left;
+  font-family:"mid-font",'Microsoft Yahei';
+}
+
+.title-append{
+  margin-top:3.56%;
+  font-weight:800;
+}
+
+.contact-row{
+  float:left;
+  padding-right:2%;
+  margin-right:2%;
+  border-right:1px solid #BEBEBE;
+  
+}
+
+.contact-row-end{
+  border-right:0px;
+  margin-right:0px;
+  padding-right:0px;
+}
+.contact-row p{
+  color:#8b8378;
+  font-size:0.65rem;
+}
+
+.contact-name{
+  float:left;
+}
+
+.my-row{
+  margin-left:0px;
+}
+
+.input-area{
+  margin-top:6%;
+}
+
+.my-col{
+  margin:0px;
+  padding:0px;
+}
+
+.mid-content{
+  font-weight:800;
+  font-size:0.7rem !important;
+  color:black!important;
+}
+
+.mid-text-margin{
+  margin-top:5%;
+}
+
+.content-margin-top{
+  margin-top:5%;
+}
+.input-div{
+  border-bottom:1px  dashed #bebebe;
+  margin-bottom:2rem;
+  padding-bottom:1.5rem;
+}
+.input-row{
+  margin-top:1%;
+}
+.input-item{
+  float:left;
+}
+
+.input-item-right{
+  margin-right: 1%;
+}
+
+.input-date{
+  line-height:inherit !important;
+}
+
+input{
+  line-height:0.9rem;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom-width:1px;
+  outline:medium;
+}
+
+.input-item :focus{
+  border-bottom-color:#A4D3EE;
+}
+.margin-left-5px{
+  margin-left: 12px;
+}
+
+.bold-text{
+  font-weight:800;
+  color:#333333;
+}
+
+.footer{
+  padding-right:8%;
+  background-color:#FAFAFA;
+}
+
+.foot-logoinfo{
+  float:right;
+}
+
+.foot-logo{
+  float:left;
+}
+
+.foot-title{
+  float:left;
+}
+
+.foot-titlename{
+  font-family:'logo-font','Microsoft Yahei';
+  margin-top:14px;
+  font-size:20px;
+  margin-bottom:1px;
+  color:#333;
+}
+
+.foot-titleinfo{
+  font-family:'logo-font','Microsoft Yahei';
+  font-size:8px;
+  color:#333;
+}
+
+.foot-pageinfo{
+  float:right;
+}
+
+.foot-companyinfo{
+  float:right;
+}
+
+.footer-content-text{
+  font-family:'content-font','Microsoft Yahei';
+  font-size:0.7rem;
+  color:#333;
+}
+
+.contact-container{
+  margin-top:65px;
+  padding-top:5%;
+  padding-bottom:5%;
+  text-align:center;
+}
+
+.contact-logo{
+  width:143px;
+  margin:0 auto ;
+}
+
+.contact-fontdiv{
+  margin-top:0.74%;
+  margin-bottom:2%;
+}
+
+.contact-font{
+  font-size:1.6rem;
+  font-family:'content-font','Microsoft Yahei';
+  color:#B8B8B8;
+  font-weight:600;
+}
+
+.contact-img img{
+  width:15%;
+}
+
+.file-box{ position:relative;width:340px} 
+.txt{ height:22px; border:1px solid #cdcdcd; width:180px;} 
+.btn{ background-color:#FFF; border:1px solid #CDCDCD;height:24px; width:70px; vertical-align:middle;} 
+.file{ position:absolute; top:0; right:80px; height:24px; filter:alpha(opacity:0);opacity: 0;width:260px }
+

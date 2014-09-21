@@ -1,0 +1,350 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Picourse </title>
+<link rel="stylesheet" type="text/css" href="/picourse/Public/dec/style.css" />
+<link rel="stylesheet" type="text/css" href="/picourse/Public/dec/picers.css" />
+<script type="text/javascript" src="/picourse/Public/dec/clockp.js"></script>
+<script type="text/javascript" src="/picourse/Public/dec/clockh.js"></script> 
+<script type="text/javascript" src="/picourse/Public/dec/jquery.min.js"></script>
+<script type="text/javascript" src="/picourse/Public/dec/ddaccordion.js"></script>
+<script type="text/javascript" src="/picourse/Public/dec/courseSLT.js"></script>
+<script type="text/javascript">
+ddaccordion.init({
+	headerclass: "submenuheader", //Shared CSS class name of headers group
+	contentclass: "submenu", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc] [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", ""], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["suffix", "<img src='/picourse/images/plus.gif' class='statusicon' />", "<img src='images/minus.gif' class='statusicon' />"], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "fast", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})
+</script>
+
+<script type="text/javascript" src="/picourse/Public/dec/jconfirmaction.jquery.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		$('.ask').jConfirmAction();
+	});
+	
+</script>
+
+<script language="javascript" type="text/javascript" src="/picourse/Public/dec/niceforms.js"></script>
+<link rel="stylesheet" type="text/css" media="all" href="/picourse/Public/dec/niceforms-default.css" />
+
+</head>
+<body>
+<div id="main_container">
+
+	<div class="header">
+    <div class="logo"><a href="#"><img src="/picourse/images/logo.gif" alt="" title="" border="0" /></a></div>
+    
+    <div class="right_header">Welcome Admin</div>
+    <div id="clock_a"></div>
+    </div>
+    
+    <div class="main_content">
+    
+                    <div class="menu">
+                    <ul>
+                    <li><a class="current" href="index.html">Admin Home</a></li>
+                    </ul>
+                    </div> 
+                    
+                    
+                    
+                    
+    <div class="center_content">  
+    
+    
+    
+    <div class="left_content">
+    
+    
+            <div class="sidebarmenu">
+            
+                <a class="menuitem submenuheader" href="">课程分类</a>
+                <div class="submenu">
+                    <ul>
+                    <li><a href="/picourse/index.php/HighCourse">高级课程</a></li>
+                    <li><a href="/picourse/index.php/MidCourse">中基层课程</a></li>
+                    <li><a href="/picourse/index.php/OpenCourse">公开课程</a></li>
+                    <li><a href="/picourse/index.php/SelectedCourse">精选课程</a></li>
+                    </ul>
+                </div>
+                <a class="menuitem submenuheader" href="" >资讯分类</a>
+                <div class="submenu">
+                    <ul>
+                    <li><a href="/picourse/index.php/AcInfo">行业活动</a></li>
+                    <li><a href="/picourse/index.php/ViewInfo">观察与观点</a></li>
+                    <li><a href="/picourse/index.php/NewsInfo">行业资讯</a></li>
+                    <li><a href="/picourse/index.php/SolutionInfo">解决方案</a></li>
+                    </ul>
+                </div>
+            
+                <a class="menuitem" href="/picourse/index.php/Agency">机构</a>
+                <a class="menuitem" href="/picourse/index.php/Teacher">讲师</a>
+                
+              
+                    
+            </div>
+            
+            
+            <div class="sidebar_box">
+                <div class="sidebar_box_top"></div>
+                <div class="sidebar_box_content">
+                <h3>We're picers!</h3>
+               <img src="/picourse/Public/dec/pic/picers.jpg" alt="" title="" class="picers_img" />             
+                </div>
+                <div class="sidebar_box_bottom"></div>
+            </div>
+            
+            <div class="sidebar_box">
+                <div class="sidebar_box_top"></div>
+                <div class="sidebar_box_content">
+                <h4>近期安排</h4>
+                <p>
+					周四及周日晚初定为开会时间，具体时间每周三前确定。
+                </p>  
+                           
+                </div>
+                <div class="sidebar_box_bottom"></div>
+            </div>
+            
+            
+            <div class="sidebar_box">
+                <div class="sidebar_box_top"></div>
+                <div class="sidebar_box_content">
+                <h3>To do List</h3>
+                <img src="/picourse/images/info.png" alt="" title="" class="sidebar_icon_right" />
+                <ul>
+                <li>服务端提供分类接口，按分类返回数据。</li>
+                 <li>客户端继续进行界面完善，并获取数据。 </li>
+                  <li>准备好样例数据。 </li>
+				  <li>更新界面图。 </li>
+                   
+                </ul>                
+                </div>
+                <div class="sidebar_box_bottom"></div>
+            </div>
+              
+    
+    </div>  
+    
+    <div class="right_content">            
+        
+    <h2>高级课程信息列表</h2> 
+                    
+                    
+<table id="rounded-corner" summary="2007 Major IT Companies' Profit">
+    <thead>
+    	<tr>
+        	<th scope="col" class="rounded">课程id</th>
+           
+            <th scope="col" class="rounded">主题</th>
+            <th scope="col" class="rounded">讲师ID</th>
+            <th scope="col" class="rounded">机构ID</th>
+            <th scope="col" class="rounded">时间</th>
+			 <th scope="col" class="rounded">类别</th>
+            <th scope="col" class="rounded-q4">删除</th>
+        </tr>
+    </thead>
+        <tfoot>
+    	<tr>
+        	<td colspan="6" class="rounded-foot-left"><em>受版面大小限制，暂时隐去部分课程内容。</em></td>
+        	<td class="rounded-foot-right">&nbsp;</td>
+
+        </tr>
+    </tfoot>
+    <tbody>
+		<volist name='data' id='vo'>
+			<tr>
+				<td>{$vo.id}</td>
+				<td>{$vo.theme}</td>
+				<td>{$vo.teach_id}</td>
+				<td>{$vo.agency_id}</td>
+				<td>{$vo.time}</td>
+				<td>{$vo.category}</td>
+				<td><a href='/picourse/index.php/HighCourse/delHighCourseById/id/{$vo.id}' class="ask"><img src="/picourse/images/trash.png" alt="" title="" border="0" /></a></td>
+			</tr>
+        </volist>
+    </tbody>
+</table>
+           
+     <h2>添加高级课程信息</h2>
+     
+         <div class="form">
+         <form action="__APP__/HighCourse/create" method="post" class="niceform" enctype="multipart/form-data" name="addform">
+         
+                <fieldset>
+                    <dl>
+                        <dt><label >主题:</label></dt>
+                        <dd><input type="text" name="theme" id="" size="54" /></dd>
+                    </dl>
+                    <dl>
+                        <dt><label >对象:</label></dt>
+                        <dd><input type="text" name="client" id="" size="54" /></dd>
+                    </dl>
+					
+					<dl>
+                        <dt><label >形式:</label></dt>
+                        <dd><input type="text" name="form" id="" size="54" /></dd>
+                    </dl>
+					
+					<dl>
+                        <dt><label >目标:</label></dt>
+                        <dd><input type="text" name="target" id="" size="54" /></dd>
+                    </dl>
+					
+					<dl>
+                        <dt><label >时间:</label></dt>
+                        <dd><input type="date" name="time" id="" size="54" /></dd>
+                    </dl>
+					
+					<dl>
+                        <dt><label >地点:</label></dt>
+                        <dd><input type="text" name="place" id="" size="54" /></dd>
+                    </dl>
+					
+					<dl>
+                        <dt><label >简介：</label></dt>
+                        <dd><textarea rows="10" cols="42" type="text" name="intro" id=""  ></textarea></dd>
+                    </dl>
+					
+                    <dl>
+						<dt><label >时长</label></dt>
+						<dd>
+							<select name="duration" >
+									<option value='1'>半天</option>
+									<option value='2'>一天</option>
+									<option value='3'>一天半</option>
+									<option value='4'>两天</option>
+							</select>
+						</dd>
+					</dl>
+					
+					<dl>
+						<dt><label >大纲（第一天上午）</label></dt>
+						 <dd>	
+                                <dd><textarea rows="3" cols="42" type="text" name="syllabus[]" id=""  ></textarea></dd>
+                        </dd>
+						
+					</dl>
+					<dl>
+						<dt><label >大纲（第一天下午）</label></dt>
+						 <dd>	
+                                 <dd><textarea rows="3" cols="42" type="text" name="syllabus[]" id=""  ></textarea></dd>
+                        </dd>
+						
+					</dl>
+					<dl>
+						<dt><label >大纲（第二天上午）</label></dt>
+						 <dd>	
+                                 <dd><textarea rows="3" cols="42" type="text" name="syllabus[]" id=""  ></textarea></dd>
+                        </dd>
+						
+					</dl>
+					<dl>
+						<dt><label >大纲（第二天下午）</label></dt>
+						 <dd>	
+                                 <dd><textarea rows="3" cols="42" type="text" name="syllabus[]" id=""  ></textarea></dd>
+                        </dd>
+						
+					</dl>
+                    
+                    <dl>
+                        <dt><label for="ctr">选择课程类别：</label></dt>
+                        <dd>
+                            <select name="category[]" id="category" onchange="getCCourse()" >
+                                <option value="1">学位项目课程</option>
+                                <option value="5">非学位项目课程</option>
+								<option value="8">战略管理</option>
+								<option value="9">市场营销</option>
+								<option value="10">财务与资本运营</option>
+								<option value="11">组织与人力资源</option>
+								<option value="12" selected="selected">领导力</option>
+								<option value="13">运营与供应链</option>
+								<option value="14">其它</option>
+                            </select>
+							<select name="category[]" id="c_category">
+                                <option value="0">细分项目</option>
+                            </select>
+                        </dd>
+                    </dl>
+                    
+                    <dl>
+                        <dt><label for="agency">选择课程机构：</label></dt>
+                        <dd>
+							<select name="agency_id" id="">
+								<volist name='agency_data' id='ao'>
+									<option value="{$ao.id}">{$ao.name}</option>
+								</volist>
+							</select>
+                        </dd>
+                    </dl>
+					
+					<dl>
+                        <dt><label for="teacher">选择课程讲师：</label></dt>
+                        <dd>
+							<select name="teach_id" id="">
+								<volist name='teach_data' id='to'>
+									<option value="{$to.id}">{$to.name}</option>	
+								</volist>
+							</select>
+                        </dd>
+                    </dl>
+                    
+                    
+                    <dl>
+                        <dt><label for="upload">上传照片：</label></dt>
+                        <dd><input type="file" name="image" id="upload" /></dd>
+                    </dl>
+                    
+                   
+                    
+                     <dl class="submit">
+                    <input type="submit" name="submit" id="submit" value="Submit" />
+                     </dl>
+                     
+                     
+                    
+                </fieldset>
+                
+         </form>
+         </div>  
+      
+     
+     </div><!-- end of right content-->
+            
+                    
+  </div>   <!--end of center content -->               
+                    
+                    
+    
+    
+    <div class="clear"></div>
+    </div> <!--end of main content-->
+	
+    
+    <div class="footer">
+    
+    	<div class="left_footer">Picourse 1.0 | </div>
+    
+    </div>
+
+</div>		
+</body>
+</html>
