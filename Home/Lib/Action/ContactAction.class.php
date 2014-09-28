@@ -1,7 +1,7 @@
 <?php
   class ContactAction extends Action{
     public function index(){
-      $this->assign("activeTab",3);
+      $this->assign("activeTab",5);
       $this->display();
     }
   }

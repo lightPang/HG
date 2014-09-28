@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <layout name="admin_layout" />
+  <script src="__PUBLIC__/js/user.js"></script>
+  <script src="__PUBLIC__/js/jquery.md5.js"></script>
+</head>
+
+<body>
+	
+	<div class="container contact-container">
+  
+    <div class="panel-heading">增加用户</div>
+		<form class="form-horizontal" action="__APP__/User/addUser" role="form" method="post">
+			<table class="table table-bordered my_table" id="user_table">
+				<tr>
+					<td >用户名: <input name="name"></td>
+          <td >账号: <input name="account"></td>
+					<td >密码: <input id="pwd" type="password" ><input id="submitPwd" type="hidden" name="pwd"/></td>
+					<td ><button id="submitBtn" class="uploadbtn default-btn" type="button" onclick="addUser()">保存</button></td>
+				</tr>
+			</table>
+			
+		</form>
+    
+		<div class="panel-heading">用户列表</div>
+			<table class="table table-bordered my_table" id="user_table">
+			<tr>
+				<td>ID</td>
+				<td>用户名</td>
+				<td>账号</td>
+				<td>删除用户</td>
+			</tr>
+			<volist name="data" id="vo">
+				<tr>
+					<td>{$i}</td>
+					<td>{$vo.name}</td>
+          <td>{$vo.account}</td>
+					<td><a href="__APP__/User/delUser?u_id={$vo.u_id}">删除</a></td>
+				</tr>
+			</volist>
+			</table>
+    
+	</div>
+	
+
+
+	
+</body>
+</html>
+

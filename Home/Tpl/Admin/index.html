@@ -31,16 +31,17 @@
 
     <div class="container">
 
-      <form action="__URL__/log_in" class="form-signin" role="form">
+      <form action="__APP__/User/logIn" class="form-signin" role="form" method="post">
         <h2 class="form-signin-heading">Wellcome to HG Club!</h2>
-        <input name='username' class="form-control" placeholder="Admin Account" required autofocus>
-        <input name='pwd' type="password" class="form-control" placeholder="Password" required>
+        <input name='account' class="form-control" placeholder="Admin Account" required autofocus>
+        <input id="inputPwd" type="password" class="form-control" placeholder="Password" required>
+        <input id="submitPwd" name="pwd" type="hidden"/>
         <!--
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
         !-->
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="button" onclick="logIn()">Sign in</button>
       </form>
 
     </div> <!-- /container -->
@@ -51,6 +52,8 @@
     <script src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/jquery.md5.js"></script>
+    <script src="__PUBLIC__/js/logIn.js"></script>
     <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>

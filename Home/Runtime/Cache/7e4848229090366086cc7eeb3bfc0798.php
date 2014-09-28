@@ -17,6 +17,12 @@
       <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    
+    <script src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
+    <script src="__PUBLIC__/js/functional.js"></script>
   </head>
   <body>
     <div class="navbar navbar-default navbar-static-top my_nav" role="navigation">
@@ -31,6 +37,8 @@
             <li><a href="__APP__/Index">华冠</a></li>
             <li><a href="__APP__/Service">服务</a></li>
             <li><a href="__APP__/Apply">申请</a></li>
+            <li><a href="__APP__/Course">课程</a></li>
+            <li><a href="__APP__/News">后院</a></li>
             <li><a href="__APP__/Contact">联系</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -122,11 +130,6 @@
       </div>
       <div style="clear:both"></div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <input type="hidden" name="activeTab" id="activeTab" value="<?php echo ($activeTab); ?>"/>
-    <script src="__PUBLIC__/js/jquery-1.11.0.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="__PUBLIC__/js/bootstrap.min.js"></script>
-    <script src="__PUBLIC__/js/functional.js"></script>
   </body>
 </html>
